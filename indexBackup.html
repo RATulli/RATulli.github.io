@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Romina</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Romina-Logo.jpg" alt="">
+            </div>
+            <h1>Romina Alejandra Tulli</h1>
+            <h2>Programadora Back-End | Tecnica Universitaria en Sistemas Informaticos | Docente de Base de datos | Estudiante avanzada de Ingenieria Naval</h2>
+            <br>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, mi nombre es Romina.</span> 
+                Soy Analista de Sistemas (UTN) y programadora back-end con experiencia en integraciones, automatización y operaciones 
+                cloud en ServiceNow, AWS y Azure. Cuento con certificación AWS Solutions Architect - Associate y continúo 
+                especializándome en Cloud DevOps e ingeniería de datos. Actualmente curso Ingeniería Naval en la UTN, 
+                combinando conocimientos de software, infraestructura y modelado técnico. 
+                Interesada en desarrollar soluciones cloud escalables y aplicar la tecnología a desafíos de ingeniería y del sector naval.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nombre Completo</strong>
+                            Tulli, Romina Alejandra
+                        </li>
+                        <li>
+                            <strong>Ubicacion</strong>
+                            Zona Mar del Plata, Provincia de Buenos Aires
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ServiceNow Developer</span>
+                        </li>
+                        <li>
+                            <strong>Linkedin</strong>
+                            <a href="https://www.linkedin.com/in/romina-alejandra-tulli/" target="_blank">
+                                https://www.linkedin.com/in/romina-alejandra-tulli/ </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+            </div>
+            <a href="https://drive.google.com/file/d/1e2p2mSznR7O8miNHuhZZtGqNv5vtt9iB/view?usp=sharing"
+                target="_blank">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+
+                <div class="col">
+                    <h3>Cloud & Data Skills</h3>
+                    <div class="skill">
+                        <span>
+                            <img src="/img/logos/azure.png" alt="Microsoft Azure" title="Microsoft Azure" width="100" height="100">
+                            <img src="/img/logos/linux.png" alt="Linux" width="100" title="Linux" height="100">
+                            <img src="/img/logos/aws.png" alt="AWS" width="100" title="Amazon Web Services" height="100">
+                            <img src="/img/logos/mysql.png" alt="MySQL" width="100" title="Mysql Server" height="100">
+                            <img src="/img/logos/awsRds.png" alt="MySQL" width="100" title="Amazon RDS" height="100">
+                            <img src="/img/logos/DynamoDB.png" alt="MySQL" width="100" title="Amazon DynamoDB" height="100">                            
+                            <img src="/img/logos/excel.png" alt="Excel" width="100" title="Excel" height="100">
+                            <img src="/img/logos/ServiceNow.png" alt="Service Now" title="ServiceNow" width="100" height="100">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3>FullStack Skills</h3>
+                    <div class="skill">
+                        <span>
+                            <img src="/img/logos/python.png" alt="Python" title="Python" width="100" height="100">
+                            <img src="/img/logos/django.png" alt="Django" title="Django Framework" width="100" height="100">
+                            <img src="/img/logos/Javascript.png" alt="Javascript" title="Javascript" width="100" height="100">
+                            <img src="/img/logos/nodejs.png" alt="NodeJs" title="NodeJs" width="100" height="100">
+                            <img src="/img/logos/react.png" alt="React" title="React" width="100" height="100">
+                            <img src="/img/logos/s3.png" alt="AWS Lambda" title="Amazon S3" width="100" height="100">
+                            <img src="/img/logos/aws-api-gateway-logo-png_seeklogo-430924.png" title="AWS ApiGateway" alt="Aws Api Gateway"
+                                width="100" height="100">
+                            <img src="/img/logos/Lambda.png" alt="AWS Lambda" title="AWS Lambda Function" width="100" height="100">
+                            <img src="/img/logos/docker.png" alt="Docker" title="Docker" width="100" height="100">
+                    
+                            
+                            <img src="/img/logos/serverless.png" alt="Serverless Framework" title="Serverless Framework" width="100" height="100">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <h3>Naval Engineering Skills</h3>
+                    <div class="skill">
+                        <span>
+                            <img src="/img/logos/autodesk-autocad.png" alt="Autocad" title="Autocad" width="100" height="100">
+                            <img src="/img/logos/rhinoceros-3d-logo-770376F408-seeklogo.com.png" title="Rhinoceros" alt="Rhinoceros"
+                                width="100" height="100">
+                            <img src="/img/logos/microsoft-project-server.png" alt="Microsoft Projects" title="Microsoft Project" width="100"
+                                height="100">
+
+                        </span>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Certifications Skills</h3>
+                    <div class="skill">
+                        <span>
+                            <a href="https://www.credly.com/badges/92033530-f5df-4964-95c2-3fb2f260500f/public_url"
+                                target="_blank">
+                                <img src="/img/logos/microsoft-certified-azure-data-fundamentals.png" alt="Azure Data Fundamentals" title="Azure Data Fundamentals"
+                                    width="100" height="100">
+                            </a>
+                            <a href="https://www.credly.com/badges/8f6ac72b-ed97-4c95-aeb0-dfb4fc0956be/public_url"
+                                target="_blank">
+                                <img src="/img/logos/microsoft-certified-azure-fundamentals.png" alt="Azure Fundamentals" title="Azure Fundamentals" width="100"
+                                    height="100">
+                            </a>
+                            <a href="https://www.credly.com/badges/2de8fac0-2db5-464f-ba7d-74db20f6af15/public_url"
+                                target="_blank">
+                                <img src="/img/logos/aws-certified-cloud-practitioner.png" alt="Aws Cloud Fundamentals" title="Amazon Cloud Practitioner"
+                                    width="100" height="100">
+                            </a>
+                            <a href="https://www.credly.com/badges/79752f91-3aab-4774-8ec3-719bb7838693/public_url"
+                                target="_blank">
+                                <img src="/img/logos/aws-certified-solutions-architect-associate.png" alt="Aws Cloud Fundamentals" title="AWS Certified Solutions Architect - Associate"
+                                    width="100" height="100">
+                            </a>
+                            <a href="https://www.credly.com/badges/f5fc13f8-71d0-407f-97b6-527471718d66/public_url"
+                                target="_blank">
+                                <img src="/img/logos/aws-cloud-quest-solutions-architect-training-badge.png" alt="Aws Cloud Fundamentals" title="AWS Certified Solutions Architect - Associate"
+                                    width="100" height="100">
+                            </a>
+                            <a href="https://www.credly.com/badges/840de2c1-af8c-4110-99cf-8409f1dc8d35/public_url"
+                                target="_blank">
+                                <img src="/img/logos/aws-cloud-quest-data-analytics-training-badge.png" alt="Aws Cloud Fundamentals" title="AWS Certified Solutions Architect - Associate"
+                                    width="100" height="100">
+                            </a>
+                            <a href="https://www.credly.com/badges/c0ad06c8-f703-4bdb-9c03-09618e5757e1/public_url"
+                                target="_blank">
+                                <img src="/img/logos/aws-cloud-quest-generative-ai-practitioner-training.png" alt="Aws Cloud Fundamentals" title="AWS Certified Solutions Architect - Associate"
+                                    width="100" height="100">
+                            </a>
+
+
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Estudiante Ingenieria Naval</h4>
+                        <span class="casa">Universidad Tecnologica Nacional Facultad Regional Mar del Plata</span>
+                        <span class="fecha">Marzo 2019 - Actualmente</span>
+                        <p> </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>AWS Data Engineering Course</h4>
+                        <span class="casa">AWS Skill Builder</span>
+                        <span class="fecha">Septiembre 2026 - Actualmente</span>
+                        <p> </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cloud DevOps Enginner</h4>
+                        <span class="casa">Udacity NanoDegree</span>
+                        <span class="fecha">Septiembre 2026 - Actualmente</span>
+                        <p> </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Tecnica Universitaria en Sistemas Informaticos</h4>
+                        <span class="casa">Universidad Tecnologica Nacional Facultad Regional General Pacheco</span>
+                        <span class="fecha">Marzo 2018 - Febrero 2023</span>
+                        <p> </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>ServiceNow Developer</h4>
+                        <span class="casa">Accenture Argentina</span>
+                        <span class="fecha">Agosto 2024 - Actualmente</span>
+                        <p>Desarrolladora ServiceNow enfocada en integraciones REST API, automatización de eventos y gestión de alertas mediante JavaScript y Flow Designer.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Docente Universitaria</h4>
+                        <span class="casa">Universidad de la Marina Mercante</span>
+                        <span class="fecha">Marzo 2024 - Actualmente</span>
+                        <p>Docente universitaria de Bases de Datos, especializada en diseño relacional, SQL y enseñanza de fundamentos de bases de datos
+                           
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item der">
+                        <h4>Azure Monitoring Administrator</h4>
+                        <span class="casa">Accenture Argentina</span>
+                        <span class="fecha">Mayo 2021 - Agosto 2024</span>
+                        <p>-Garantizar la disponibilidad en los servidores del cliente en el ámbito de Disaster
+                            Recovery.
+                            -Habilitar/Deshabilitar la replicación de las máquinas virtuales en Azure.
+                            -Instalar y actualizar el agente de ASR en los servidores.
+                            -Crear y realizar el seguimiento de los incidentes en la herramienta ServiceNow.
+                            -Trabajar con el método Agile dentro de Azure DevOps.
+                            -Monitorear el backup de los servidores en Cohesity.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Projects/Personal - PortFolio .png" alt="">
+                    <div class="overlay">
+                        <h3>PortFolio Personal</h3>
+                    </div>
+                    
+                </div>
+                <div class="proyecto">
+                    <a href="https://youtu.be/Q6fEMvatPeQ?si=jW-vTdzn14RW9CNA" target="_blank">
+                        <img src="img/Projects/Traductor Braile.png" alt="" width="700">
+                        <div class="overlay">
+                            <h3>Projecto Final - Carrera TUSI en UTN FRGP </h3>
+                            <p>El proyecto consiste en un sistema de logueo basico, y cuya funcion principal es traducir
+                                un
+                                codigo braile a formato texto, para luego poder reproducirlo en formato audio</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://drive.google.com/file/d/1E-Wl_icWTf6vA4vE0jgXDCuEsjuK3Q5J/view?usp=sharing"
+                        target="_blank">
+                        <img src="img/Projects/planoDeLineas.png" alt="">
+                        <div class="overlay">
+                            <h3>Plano de Lineas - Autocad 2014</h3>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <form action="https://formsubmit.co/d05193967e426a96ae2fd7261a8d65da" method="POST" />
+            <div class="fila">
+                <!-- Formulario -->
+
+                <div class="col">
+                    <input type="text" name="nombre" placeholder="Tú Nombre">
+                    <input type="text" name="telefono" vplaceholder="Número telefónico">
+                    <input type="text" name="email" placeholder="Dirección de correo">
+                    <input type="text" name="tema" placeholder="Tema">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+
+                </div>
+            </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <h3>Tulli, Romina Alejandra</h3>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/romina-alejandra-tulli/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
